@@ -1,0 +1,33 @@
+.calculate {
+    border: none;
+    color: rgb(33, 122, 21);
+    padding: 6px 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 10px;
+    margin-left: 165px;
+    cursor: pointer;
+}
+
+#resultArea {
+    width: 400px;
+    height: 150px;
+    background-color: rgb(221, 198, 149);
+}
+
+body {
+    background-color: grey;
+}
+
+#input1 {
+    background-color: rgb(149, 221, 149);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#input2 {
+    background-color: rgb(149, 221, 149);
+    margin-left: 20px;
+    margin-right: 20px;
+}
