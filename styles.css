@@ -1,6 +1,7 @@
 .calculate {
-    border: none;
-    color: rgb(33, 122, 21);
+    color: rgb(249,22,16);
+    background-color: rgb(149, 221, 149);
+    border-color: rgb(249,22,16);
     padding: 6px 12px;
     text-align: center;
     display: inline-block;
@@ -8,26 +9,56 @@
     margin: 10px 10px;
     margin-left: 165px;
     cursor: pointer;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: dashed;
+}
+.back_ground {
+    background-color: rgb(186, 255, 194);
+}
+
+#select1 {
+    border-radius: 5px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: rgb(249,22,16);
+    color: rgb(249,22,16);
+    background-color: rgb(149, 221, 149);
 }
 
 #resultArea {
     width: 400px;
     height: 150px;
-    background-color: rgb(221, 198, 149);
+    color: rgb(249,22,16);
+    border-color: rgb(249,22,16);
+    background-color: rgb(149, 221, 149);
+    border-width: 1px;
+    border-radius: 15px;
+    border-style: dashed;
 }
 
-body {
+/*body {
     background-color: grey;
-}
+}*/
 
 #input1 {
+    color: rgb(249,22,16);
+    border-color: rgb(249,22,16);
     background-color: rgb(149, 221, 149);
     margin-left: 20px;
     margin-right: 20px;
+    border-radius: 25px;
+    border-style: dashed;
+    border-width: 1px;
 }
 
 #input2 {
+    color: rgb(249,22,16);
+    border-color: rgb(249,22,16);
     background-color: rgb(149, 221, 149);
     margin-left: 20px;
     margin-right: 20px;
+    border-radius: 25px;
+    border-style: dashed;
+    border-width: 1px;
 }
