@@ -8,23 +8,24 @@
 </head>
 
 <body>
-    <div>
-        <input type="text" id="input1" />
+    <div class ="back_ground">
+        <div>
+            <input type="text" id="input1" />
 
-        <select name="operation" id="select1">
-            <option value="plus"> + </option>
-            <option value="minus"> - </option>
-            <option value="mult"> * </option>
-            <option value="div"> / </option>
-        </select>
+            <select name="operation" id="select1">
+                <option value="plus"> + </option>
+                <option value="minus"> - </option>
+                <option value="mult"> * </option>
+                <option value="div"> / </option>
+            </select>
 
-        <input type="text" id="input2" />
+            <input type="text" id="input2" />
+        </div>
+
+        <button type="button" class="calculate" id="button" onClick="buttonClickHandler()">Подсчитать</button>
+        <br>
+        <textarea name=result id=resultArea>  </textarea>
     </div>
-
-    <button type="button" class="calculate" id="button" onClick="buttonClickHandler()">Посчитать</button>
-    <br>
-    <textarea name=result id=resultArea>  </textarea>
-
 </body>
 
 </html>
