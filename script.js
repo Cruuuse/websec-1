@@ -3,27 +3,33 @@ function buttonClickHandler() {
     console.log(selectElem.value);
 
     let result = 0; 
-    let value1 = document.getElementById("input1");
-    let value2 = document.getElementById("input2");
+    let value1 = document.getElementById("input1").value;
+    let value2 = document.getElementById("input2").value;
 
-    value1  = input1.value;
-    value2  = input2.value;
-    console.log(value1, value2);
-
-    switch (document.getElementById("operation").value) {
-        case "plus":
-            result = value1 + value2;
-            break;
-        case "minus":
-            result = value1 - value2;
-            break;
-        case "mult":
-            result = value1 * value2;
-            break;
-        case "div":
-            result = value1 / value2;
-            break;
+    if (value1==="" || value2===""){
+        alert("Incorrect input");
     }
-
-    document.getElementById("resultArea").innerText = result;
+    else{
+        switch (document.getElementById("select1").value) {
+            case "plus":
+                result = parseFloat(value1) + parseFloat(value2);
+                break;
+            case "minus":
+                result = parseFloat(value1) - parseFloat(value2);
+                break;
+            case "mult":
+                result = parseFloat(value1) * parseFloat(value2);
+                break;
+            case "div":
+                if (Math.abs(value2) < Number.EPSILON) {
+                    alert("Can't divide by zero");
+                    break;
+                }
+                result = parseFloat(value1) / parseFloat(value2);
+                break;
+        }
+    
+        document.getElementById("resultArea").innerText = result;
+    }
+    
 }
